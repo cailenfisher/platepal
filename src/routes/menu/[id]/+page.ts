@@ -10,7 +10,8 @@ const { data, error } = await supabase
 .from('menu')
 .select(`
     meal (
-        meal_date
+        meal_date,
+        id
     ),
     dish (
         title,

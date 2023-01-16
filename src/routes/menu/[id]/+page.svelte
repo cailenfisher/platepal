@@ -1,6 +1,7 @@
 <script lang="ts">
     import type { PageData } from './$types';
     import Review from '$lib/components/Review/Review.svelte';
+    import Results from '$lib/components/Review/Results.svelte';
   
     export let data: PageData;
     console.log('UI pagedata by ID', data)
@@ -24,8 +25,11 @@
         </div>
         {/each}        
     </div>
+    <div class="bg bg-surface-700">
+        <Results meal={data.meal.meal.id} />
+    </div>
     <div class="text">
-      <Review meal={data.meal.id} />
+      <Review meal={data.meal.meal.id} />
     </div>
 </div>
 
