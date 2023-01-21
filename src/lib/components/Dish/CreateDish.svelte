@@ -7,7 +7,7 @@
 
     let newDish: Dish = {
         title: '',
-        type: 0,
+        type: 0,        
     }
 
     let createDish = async () => {

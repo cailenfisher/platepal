@@ -6,7 +6,10 @@
     export let data: PageData | null | undefined;
     console.log('UI pagedata by ID', data)
 
-    let menuDate = new Date(data.meal.meal.meal_date + " EST") //#jenk
+    import { page } from '$app/stores';
+    
+
+    let menuDate = new Date(data.meal.meal.meal_date + " EST") //#jenky af
     let displayDate = menuDate.toLocaleDateString("en-US", { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
 </script>
   
@@ -15,6 +18,10 @@
     <div class="text-xl text-primary-500">
         {displayDate}
     </div>
+    <a href="/menu/{$page.params.id}/edit" class="btn btn-filled-primary">
+        <i class="fa fa-pencil p-1"></i>
+        Edit
+    </a>
     <div>
         {#each data.menu_items as item}
         <div class="text-xl">

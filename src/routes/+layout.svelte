@@ -34,6 +34,9 @@
 			</svelte:fragment>
 			<svelte:fragment slot="trail">				
 				<!-- <a class="btn btn-sm btn-ghost-surface" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a> -->
+				<a class="btn btn-sm btn-ghost-surface" href="/menu/all">Meals</a>
+				<a class="btn btn-sm btn-ghost-surface" href="/menu/create">Create</a>
+				<a class="btn btn-sm btn-ghost-surface" href="/menu">Today</a>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>

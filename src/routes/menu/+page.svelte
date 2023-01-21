@@ -32,6 +32,7 @@
       {#if todaysMenu.length > 0}
       <h3>Today's Menu:</h3>
       <DisplayMenu menu={todaysMenu} />
+      <a href="/menu/{todaysMenu[0].meal.id}" class="btn btn-filled-warning">Reviews</a>
       {:else}
       <div class="error text-error-500">
         <h1>No Meal Planned for today!</h1>

@@ -72,9 +72,16 @@
 
 <div class="container mb-12">
     <h1>New Menu</h1>
-    <ul>
+    <ul class="space-y-4">
         {#each newMenu as item}
-        <li>{item.title}</li>
+        <li>
+            <button on:click={() => {
+                newMenu.splice(newMenu.findIndex(i => i.id === item.id), 1)                
+                newMenu = newMenu;
+            }}
+             class="btn btn-filled-secondary"><i class="fa fa-minus"></i></button>
+            {item.title}
+        </li>
         {/each}
     </ul>    
 </div>
@@ -102,7 +109,7 @@
                     }
                 }
             );
-        }} class="btn btn-filled-primary"><i class="fa-solid fa-plus"></i></button>
+        }} class="btn btn-filled-success"><i class="fa-solid fa-plus"></i> Create Dish</button>
     </h2>
     <div class="card">
         <h3>Entree</h3>

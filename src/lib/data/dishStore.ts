@@ -2,7 +2,7 @@ import { writable } from "svelte/store";
 import { supabase } from "$lib/supabaseClient";
 
 export type Dish = {
-    id: number;
+    id?: number;
     title: string;
     created_at?: EpochTimeStamp;
     created_by?: string | null;
