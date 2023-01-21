@@ -37,6 +37,7 @@
 				<a class="btn btn-sm btn-ghost-surface" href="/menu/all">Meals</a>
 				<a class="btn btn-sm btn-ghost-surface" href="/menu/create">Create</a>
 				<a class="btn btn-sm btn-ghost-surface" href="/menu">Today</a>
+				<a href="/" class="btn"><i class="fa fa-home"></i></a>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
