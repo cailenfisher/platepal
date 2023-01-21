@@ -34,5 +34,5 @@
 </div>
 
 {:else}
-    Meal not Found!!!
+    Meal not Found!!! Starvation!!!
 {/if}
