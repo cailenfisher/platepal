@@ -7,12 +7,23 @@ import { supabase } from '$lib/supabaseClient';
 export const load: Load = (async () => {
   
 const { data, error } = await supabase
-.from('meal')
-.select()
+.from('menu')
+        .select(`
+            meal (
+                meal_date,
+                id
+            ),
+            dish (
+                title,
+                type (
+                    title
+                )
+            )
+        `)
 
 if (data) 
 {
-    return { meals: data };
+    return { menuItems: data };
 }
 
  

@@ -3,7 +3,7 @@
     import Review from '$lib/components/Review/Review.svelte';
     import Results from '$lib/components/Review/Results.svelte';
   
-    export let data: PageData;
+    export let data: PageData | null | undefined;
     console.log('UI pagedata by ID', data)
 
     let menuDate = new Date(data.meal.meal.meal_date + " EST") //#jenk

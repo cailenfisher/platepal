@@ -4,6 +4,7 @@
 	import '@skeletonlabs/skeleton/styles/all.css';
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import { Modal, modalStore } from '@skeletonlabs/skeleton';
 
 	// db auth stuff
 	import { supabase } from '$lib/supabaseClient'
@@ -39,3 +40,5 @@
 	<!-- Page Route Content -->
 	<slot />
 </AppShell>
+
+<Modal />
